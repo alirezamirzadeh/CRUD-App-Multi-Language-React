@@ -1,0 +1,25 @@
+.row {
+  max-width: $gutter-width ;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+
+    @include respond(phone) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  @include respond(phone) {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+
+  @include clearfix;
+
+  
+}
+
+section {
+  margin:  10.4rem 0;
+}

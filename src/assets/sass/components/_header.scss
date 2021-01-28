@@ -1,0 +1,53 @@
+header {
+    background-color: var(--bg-secondary);
+    position: fixed;
+    border-bottom: 2px solid var(--border-color);
+    z-index: 10;
+    width: 100%;
+    height: 5.4rem;
+    top: 0;
+    @include respond(phone) {
+        height: 6.5rem;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.4rem;
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .lang {
+        font-weight: 900;
+        font-size: 2.2rem;
+        padding: 0 .5rem;
+        border-bottom: 3px solid rgba(var(--shadow), 0.5);
+        align-self: center;
+        cursor: pointer;
+                 padding-top: 0.6rem;
+
+    }
+    .theme {
+       height: 2.5rem;
+       align-self: center;
+       padding: 0 1.5rem;
+       filter: var(--filter-primary);
+       cursor: pointer;
+       -webkit-filter: var(--filter-primary);
+}
+
+    @include respond(phone) {
+        height: 6.5rem;
+    }
+}
+

@@ -1,0 +1,37 @@
+// COLOR
+:root {
+  --color: #202020;
+  --color-primary:rgba(244, 59, 71, 1);
+  --color-secondary: #55c570;
+  --bg: #fff;
+  --bg-secondary: #f4f5f6;
+  --border-color: #e7e7e7;
+  --bg-card: #fcfcfc;
+  --shadow: 0, 0, 0;
+  --filter-primary: invert(0%) sepia(6%) saturate(7500%) hue-rotate(255deg) brightness(100%) contrast(101%);
+  --filter-secondary: invert(48%) sepia(94%) saturate(1416%) hue-rotate(114deg)
+    brightness(86%) contrast(89%);
+}
+
+.dark-mode {
+  --color: #e0e0e0;
+  --color-primary: rgba(244, 59, 71, .9);
+  --color-secondary: #55c57a;
+  --bg: #202020;
+  --bg-secondary: #131313;
+  --border-color: #292929;
+  --bg-card: #353535;
+  --shadow: 256, 256, 256;
+  --filter-primary: invert(100%) sepia(0%) saturate(7476%) hue-rotate(159deg) brightness(94%) contrast(116%);
+  --filter-secondary: invert(70%) sepia(26%) saturate(840%) hue-rotate(87deg)
+    brightness(93%) contrast(84%);
+}
+
+//FONT SIZE
+$default-font-size: 1.6rem;
+//GRID
+$gutter-width: 92rem;
+$gutter-horizontal: 2rem;
+$gutter-vertical: 2rem;
+$gutter-vertical-small: 1rem;
+$gutter-vertical-very-small: 0.5rem;

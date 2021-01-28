@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // default 1rem
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1rem = 9px; 9px/16px = 56.25%
+  }
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px; 8px/16px = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; // 1rem = 12px; 12px/16px = 75%
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--bg);
+  color: var(--color);
+  font-family: 'Vazir', sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;  
+}
+
+button,input {
+  font-family: 'Vazir';
+}
+
+hr {
+  margin: 2.5rem 0;
+  outline: none;
+  border: none;
+  height: 2px;
+  width: 100%;
+  background: rgba(var(--shadow), 0.1);
+}
+
+a {
+  color: var(--color);
+  text-decoration: none;
+}
+
+.notfound {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 70vh;
+  font-size: 18rem;
+}

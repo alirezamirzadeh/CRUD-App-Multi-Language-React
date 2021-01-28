@@ -1,0 +1,47 @@
+form {
+    padding: 3rem 0;
+    margin: 0 1rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
+    & > input {
+        width: 80%;
+        height: 6rem;
+        outline: none;
+
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+
+    & > button {
+        width: 18%;
+        height: 6rem;
+        color:var(--color-primary);;
+        outline: none;
+        background-color: transparent;
+        font-size: 2rem;
+        font-weight: 900;
+        @include respond(phone) {
+            width: 100%;
+            margin: 3rem 0;
+        }
+        border: 2px solid var(--color-primary);
+        cursor: pointer;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+
+        &:hover {
+            background-color :var(--color-primary);
+            color: #fff;
+
+        }
+    }
+}
